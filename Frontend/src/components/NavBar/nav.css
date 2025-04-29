@@ -1,0 +1,73 @@
+/* 
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+.admin-seperator {
+    border-left: 2px solid blue;
+    margin-left: 8px;
+    padding-left: 8px;
+    text-align: left;
+}
+
+.material-symbols-outlined {
+    font-size: 20px;
+    vertical-align: text-bottom;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.color-blue {
+    color: #0B16A5;
+} 
+
+
+
+
+
+
+
+ */
+
+
+ /* nav.css */
+.relative.group {
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .absolute {
+    position: absolute;
+    z-index: 1001 !important;
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .bg-white {
+    background-color: white;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f7fafc;
+  }
+  
+  .hover\:bg-gray-100:hover {
+    background-color: #edf2f7;
+  }
+  
+  /* Add any additional styles you need here */
