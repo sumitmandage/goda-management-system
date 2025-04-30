@@ -9,7 +9,16 @@ import base64
 from datetime import datetime, date
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app, resources={
+    r"/*": {
+        "origins": [
+            "https://godavari-management-system.netlify.app",
+            "http://localhost:3000"
+        ],
+        "methods": ["GET", "POST", "PUT", "DELETE"],
+        "allow_headers": ["Content-Type"]
+    }
+}) # Enable CORS for all routes
 
 # Configure the database
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI', 'mysql+mysqlconnector://root:root@localhost/new_db')
